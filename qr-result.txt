@@ -1,0 +1,147 @@
+html<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderlust Travel Blog - Home</title>
+<style>
+  /* General page styling */
+  body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f7f9; color: #333; }
+  header { text-align: center; }
+  header h1 { color: #2c3e50; }
+  nav { text-align: center; margin: 15px 0; }
+  nav a { margin: 0 10px; color: #2980b9; text-decoration: none; font-weight: bold; }
+
+  /* Number Blocks Container - Flex layout to place blocks side by side */
+  .number-container { display: flex; justify-content: center; gap: 15px; margin: 25px 0; flex-wrap: wrap; }
+  
+  /* Base style for all number blocks - they are links */
+  .number-block {
+    display: flex; align-items: center; justify-content: center;
+    width: 90px; height: 90px; font-size: 32px; font-weight: bold;
+    color: white; text-decoration: none; border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animation */
+  }
+  /* Hover effect: lift block and add shadow */
+  .number-block:hover { transform: scale(1.1); box-shadow: 0 8px 16px rgba(0,0,0,0.25); cursor: pointer; }
+
+  /* Different background color for each continent block */
+  .block-1 { background-color: #e74c3c; } /* Europe - Red */
+  .block-2 { background-color: #27ae60; } /* Asia - Green */
+  .block-3 { background-color: #2980b9; } /* America - Blue */
+  .block-4 { background-color: #f39c12; } /* Africa - Orange */
+
+  /* Destination sections */
+  .destination-section { background: white; padding: 20px; margin: 20px auto; max-width: 700px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  
+  /* Different color for continent headings vs country headings */
+  .destination-section h2 { color: #2c3e50; border-bottom: 3px solid #2980b9; padding-bottom: 5px; }
+  .destination-section h3 { color: #e67e22; } /* Subheading color for countries */
+
+  /* Nested Lists Styling */
+  ol { font-weight: bold; }
+  ol li { margin: 10px 0; }
+  ul { font-weight: normal; color: #555; list-style-type: square; }
+  .back-top { display: block; text-align: right; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌍 Wanderlust Travel Blog</h1>
+  <p>Click a number to explore a continent!</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="travel-stories.html">Travel Stories</a>
+</nav>
+
+<!-- Interactive Number Blocks: Each links to an ID below -->
+<div class="number-container">
+  <a href="#europe" class="number-block block-1">1</a>
+  <a href="#asia" class="number-block block-2">2</a>
+  <a href="#america" class="number-block block-3">3</a>
+  <a href="#africa" class="number-block block-4">4</a>
+</div>
+<p style="text-align:center;">1 = Europe &nbsp; | &nbsp; 2 = Asia &nbsp; | &nbsp; 3 = America &nbsp; | &nbsp; 4 = Africa</p>
+
+<!-- SECTION 1: EUROPE -->
+<section id="europe" class="destination-section">
+  <h2>1. Europe</h2>
+  <h3>Countries & Cities</h3>
+  <!-- Ordered list for countries, Unordered list for cities -->
+  <ol>
+    <li>France
+      <ul><li>Paris</li></ul>
+    </li>
+    <li>Italy
+      <ul><li>Rome</li></ul>
+    </li>
+    <li>Greece
+      <ul><li>Athens</li></ul>
+    </li>
+  </ol>
+  <a href="#" class="back-top">Back to Top ↑</a>
+</section>
+
+<!-- SECTION 2: ASIA -->
+<section id="asia" class="destination-section">
+  <h2>2. Asia</h2>
+  <h3>Countries & Cities</h3>
+  <ol>
+    <li>Japan
+      <ul><li>Tokyo</li><li>Kyoto</li><li>Osaka</li></ul>
+    </li>
+    <li>China
+      <ul><li>Beijing</li><li>Shanghai</li><li>Xi'an</li></ul>
+    </li>
+    <li>India
+      <ul><li>New Delhi</li><li>Mumbai</li><li>Jaipur</li></ul>
+    </li>
+  </ol>
+  <a href="#" class="back-top">Back to Top ↑</a>
+</section>
+
+<!-- SECTION 3: AMERICA -->
+<section id="america" class="destination-section">
+  <h2>3. America</h2>
+  <h3>Countries & Cities</h3>
+  <ol>
+    <li>USA
+      <ul><li>New York City</li><li>Los Angeles</li><li>Chicago</li></ul>
+    </li>
+    <li>Brazil
+      <ul><li>Rio de Janeiro</li><li>São Paulo</li><li>Salvador</li></ul>
+    </li>
+    <li>Canada
+      <ul><li>Toronto</li><li>Vancouver</li><li>Montreal</li></ul>
+    </li>
+  </ol>
+  <a href="#" class="back-top">Back to Top ↑</a>
+</section>
+
+<!-- SECTION 4: AFRICA -->
+<section id="africa" class="destination-section">
+  <h2>4. Africa</h2>
+  <h3>Countries & Cities</h3>
+  <ol>
+    <li>South Africa
+      <ul><li>Cape Town</li><li>Johannesburg</li><li>Durban</li></ul>
+    </li>
+    <li>Egypt
+      <ul><li>Cairo</li><li>Luxor</li><li>Sharm El Sheikh</li></ul>
+    </li>
+    <li>Morocco
+      <ul><li>Marrakech</li><li>Casablanca</li><li>Fez</li></ul>
+    </li>
+  </ol>
+  <a href="#" class="back-top">Back to Top ↑</a>
+</section>
+
+<footer style="text-align:center; margin-top:30px;">
+  <p>&copy; 2026 Wanderlust Travel Blog</p>
+</footer>
+
+</body>
+</html>
